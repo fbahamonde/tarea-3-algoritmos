@@ -18,20 +18,18 @@ public class Main
             String maxsec="0";
             for(int i=0; i<largo; i++)
             {  
-            	String sec="";
                 int thisSum = 0;
               for(int j=i; j<largo; j++)
              { 
                  thisSum += Integer.parseInt(parametros[j]);
-                 sec=sec+ j + "";
                if (thisSum > maxSum){
                  maxSum = thisSum;
-               	 maxsec=sec.substring(0,1) +"," + sec.substring(sec.length()-1,sec.length());
-               	 } maxsec=maxsec.substring(0,1)+","+ maxsec.substring(maxsec.length()-1, maxsec.length());}
+               	 maxsec=i +"," + j;
+               	 } maxsec=maxsec.substring(0,1)+","+ maxsec.substring(maxsec.length()-1, maxsec.length());
+               }
             }   showint(maxSum);
             System.out.print(maxsec);
        System.out.println();
-
         }
     } 
 
