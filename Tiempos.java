@@ -20,7 +20,7 @@ public static void main( String[] args) throws IOException
 	{
 		int[] arreglo= new int[i*10000];
 		double[] tiempos= tiempo(arreglo); 
-		String content = (i*10000)+","+ tiempos[0]+","+tiempos[1] +","+tiempos[2];
+		String content = (i*10000)+" "+ tiempos[0]+" "+tiempos[1] +" "+tiempos[2];
 		bw.write(content);
 		bw.newLine();
 	}
